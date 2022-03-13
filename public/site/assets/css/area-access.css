@@ -1,0 +1,165 @@
+/**
+FONT SYSTEM
+ */
+/**
+RADIUS SYSTEM
+ */
+/** DASH CONTENT */
+/**
+COLOR SYSTEM
+ */
+/** Auto generate buttons, gradients */
+html, body {
+  background: #0c0c0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif, sans-serif;
+  font-weight: 300;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+.main_area_access_user_auth {
+  display: flex;
+  max-width: 100%;
+  padding: 30px;
+  min-height: 100vh;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content {
+  background-color: #171717;
+  width: 600px;
+  max-width: 90%;
+  margin: auto;
+  padding: 30px 40px 20px 40px;
+  align-items: center;
+  border-radius: 10px;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content header .main_login_logo {
+  color: #e7e7e7;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100 !important;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content header .main_login_logo span {
+  font-weight: 300;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content header h1 {
+  font-size: 1em;
+  text-align: center;
+  font-weight: 300;
+  color: #e7e7e7;
+  margin-top: 10px;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form {
+  display: block;
+  margin: 15px 0;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form label {
+  display: block;
+  margin-bottom: 30px;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form label .field {
+  font-size: 0.875em;
+  display: block;
+  font-weight: 400;
+  color: #e7e7e7;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form input {
+  border: 1px solid #e7e7e7;
+  font-size: 1em;
+  background: #0c0c0c;
+  color: #e7e7e7;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  border-radius: 10px !important;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form input::-moz-placeholder {
+  color: #F0F2F5;
+  font-weight: 300;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form input:-ms-input-placeholder {
+  color: #F0F2F5;
+  font-weight: 300;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form input::placeholder {
+  color: #F0F2F5;
+  font-weight: 300;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form input:focus {
+  border: 1px solid #FFFFFF;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form input:not([type=radio]):not([type=checkbox]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form button {
+  font-size: 0.875em;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 12px !important;
+  background-image: linear-gradient(10deg, #e3e1e1 0%, #b0b0b0 100%);
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  color: #000;
+  opacity: 0.9;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content form button:hover {
+  background-image: linear-gradient(195deg, #e3e1e1 0%, #b0b0b0 100%);
+}
+.main_area_access_user_auth .main_area_access_user_auth_content .main_login_register {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content .main_login_register small {
+  color: #F0F2F5;
+  font-weight: 300;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content .main_login_register a {
+  color: #F0F2F5;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content .main_login_register a:hover {
+  text-decoration: underline;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content footer {
+  padding-top: 15px;
+  border-top: solid 1px #adadae;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 300;
+  color: #F0F2F5;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content footer a {
+  color: #36BA9B;
+  text-decoration: none;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content footer a:hover {
+  text-decoration: underline;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content footer p {
+  margin: 2px;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content footer p.content_help {
+  margin-top: 3px;
+}
+.main_area_access_user_auth .main_area_access_user_auth_content footer p.content_help a {
+  text-decoration: none;
+}

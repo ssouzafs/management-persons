@@ -1,0 +1,52 @@
+@import 'variables';
+
+html, body {
+    background: $dash-background;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family, sans-serif;
+    font-weight: 300;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+// Componentes não presentes no boot.scss
+@import "components/header";
+@import "components/paginator";
+@import "components/triggers_messages";
+
+// CSS Pages
+@import "pages/home";
+@import "pages/content_global_pages";
+
+// Estilização customizada da Tabela datatable
+table thead tr th {
+    font-weight: 300 !important;
+    font-size: 1.0em !important;
+}
+
+table tbody tr td {
+    color: $color-dark-secondary !important;
+    font-weight: 300 !important;
+    opacity: .785 !important;
+    font-size: .955rem;
+
+
+    a {
+        color: $color-dark !important;
+    }
+}
+
+table .thead, tfoot, tr, th {
+    border-top: 0 !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #757474;
+}

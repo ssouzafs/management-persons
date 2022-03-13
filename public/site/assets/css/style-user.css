@@ -1,0 +1,141 @@
+/**
+FONT SYSTEM
+ */
+/**
+RADIUS SYSTEM
+ */
+/** DASH CONTENT */
+/**
+COLOR SYSTEM
+ */
+/** Auto generate buttons, gradients */
+html, body {
+  background: #F0F2F5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif, sans-serif;
+  font-weight: 300;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+.main_page_container {
+  display: block;
+  width: 100%;
+  max-height: 100vh;
+  margin-top: -4rem;
+}
+.main_page_container .main_page_container_content {
+  margin: auto;
+  width: min(90vw, 1480px);
+  padding-bottom: 20px;
+}
+.main_page_container .main_page_container_content .main_page_container_content_box {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #dfdede;
+  padding: 22px;
+}
+.main_page_container .main_page_container_content .main_page_container_content_box h1 {
+  font-size: 1.4rem;
+  padding: 0 0 10px 0;
+  font-weight: 400;
+  opacity: 0.875;
+}
+.main_page_container .main_page_container_content .main_page_container_content_box .separator {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 16px;
+}
+.main_page_container .main_page_container_content .main_page_content_form {
+  width: 100%;
+}
+.main_page_container .main_page_container_content .main_page_content_form form input, .main_page_container .main_page_container_content .main_page_content_form form select, .main_page_container .main_page_container_content .main_page_content_form form textarea {
+  border: 1px solid #b7bdc3 !important;
+}
+.main_page_container .main_page_container_content .main_page_content_form form input::-moz-placeholder, .main_page_container .main_page_container_content .main_page_content_form form select::-moz-placeholder, .main_page_container .main_page_container_content .main_page_content_form form textarea::-moz-placeholder {
+  font-size: 0.915em !important;
+  opacity: 0.9 !important;
+  font-weight: 300;
+}
+.main_page_container .main_page_container_content .main_page_content_form form input:-ms-input-placeholder, .main_page_container .main_page_container_content .main_page_content_form form select:-ms-input-placeholder, .main_page_container .main_page_container_content .main_page_content_form form textarea:-ms-input-placeholder {
+  font-size: 0.915em !important;
+  opacity: 0.9 !important;
+  font-weight: 300;
+}
+.main_page_container .main_page_container_content .main_page_content_form form input::placeholder, .main_page_container .main_page_container_content .main_page_content_form form select::placeholder, .main_page_container .main_page_container_content .main_page_content_form form textarea::placeholder {
+  font-size: 0.915em !important;
+  opacity: 0.9 !important;
+  font-weight: 300;
+}
+.main_page_container .main_page_container_content .main_page_content_form form input:disabled, .main_page_container .main_page_container_content .main_page_content_form form select:disabled, .main_page_container .main_page_container_content .main_page_content_form form textarea:disabled {
+  cursor: not-allowed;
+  background-color: #F0F2F5;
+}
+.main_page_container .main_page_container_content .main_page_content_form form input:focus, .main_page_container .main_page_container_content .main_page_content_form form select:focus, .main_page_container .main_page_container_content .main_page_content_form form textarea:focus {
+  border: 1px solid #747b82 !important;
+}
+.main_page_container .main_page_container_content .main_page_content_form form button {
+  font-weight: 300;
+}
+.main_page_container .main_box_list_data {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 0px;
+}
+
+.main_header {
+  width: 100%;
+  background-color: #131313;
+  height: 200px;
+}
+.main_header .main_header_content {
+  font-family: Poppins, sans-serif;
+  max-width: min(90vw, 1480px);
+  margin: auto;
+}
+.main_header .main_header_content nav {
+  background-color: #131313 !important;
+}
+.main_header .main_header_content .main_logo {
+  font-weight: 100;
+  color: #e7e7e7;
+  font-size: 1.585em;
+}
+.main_header .main_header_content .dropdown-menu {
+  background-color: #FFFFFF;
+  width: 320px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #dfdede;
+}
+.main_header .main_header_content .dropdown-menu a {
+  padding: 10px 20px;
+  margin-bottom: 0;
+  color: #4d4d4d;
+}
+.main_header .main_header_content .dropdown-menu a:hover {
+  background-color: #131313;
+  color: #e7e7e7;
+}
+.main_header .main_header_content .dropdown-menu.exit a:hover {
+  color: #fb4e5f;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+@media (max-width: 990px) {
+  nav {
+    position: relative;
+    z-index: 100 !important;
+  }
+}

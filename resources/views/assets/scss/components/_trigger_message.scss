@@ -1,0 +1,42 @@
+.trigger {
+    font-size: .9em;
+    padding: 13px;
+    -webkit-border-radius: 5px 4px 4px 5px;
+    -moz-border-radius: 5px 4px 4px 5px;
+    border-radius: 5px 4px 4px 5px;
+    margin: 20px 0;
+    font-weight: 500 !important;
+    border: 2px solid #cccccc;
+    border-left-width: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.trigger small {
+    display: block;
+    margin-top: 7px;
+    font-family: "Source Code Pro", serif;
+    font-size: 0.75em;
+}
+
+.trigger.success {
+    color: $color-green;
+    border-color: $color-green;
+}
+
+.trigger.warning {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.trigger.error {
+    color: $color-red;
+    border-color: $color-red;
+}
+
+.trigger.info {
+    color: $color-blue;
+    border-color: $color-blue;
+}

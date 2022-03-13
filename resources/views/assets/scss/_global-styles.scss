@@ -1,0 +1,73 @@
+.main_page_container {
+    display: block;
+    width: 100%;
+    max-height: 100vh;
+    margin-top: -4rem;
+
+    .main_page_container_content {
+        margin: auto;
+        width: $size-box-content;
+        padding-bottom: 20px;
+
+        .main_page_container_content_box {
+
+            background-color: #FFFFFF;
+            border-radius: $radius-normal;
+            -webkit-border-radius: $radius-normal;
+            -moz-border-radius: $radius-normal;
+            border: 1px solid #dfdede;
+            padding: 22px;
+
+            h1 {
+                font-size: 1.4rem;
+                padding: 0 0 10px 0;
+                font-weight: 400;
+                opacity: .875;
+            }
+
+            .separator {
+                border-bottom: 1px solid $color-gray;
+                margin-bottom: 16px;
+            }
+        }
+
+        .main_page_content_form {
+            width: 100%;
+
+            form {
+
+                input, select, textarea {
+                    border: 1px solid #b7bdc3 !important;
+
+                    &::placeholder {
+                        font-size: .915em !important;
+                        opacity: .9 !important;
+                        font-weight: 300;
+                    }
+
+                    &:disabled {
+                        cursor: not-allowed;
+                        background-color: $dash-background;
+                    }
+
+                    &:focus {
+                        border: 1px solid #747b82 !important;
+                    }
+                }
+
+                button {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    // BOX LIST DATA WITH DATATABLE
+    .main_box_list_data {
+        background-color: #FFFFFF;
+        border-radius: $radius-normal;
+        -webkit-border-radius: $radius-normal;
+        -moz-border-radius: $radius-normal;
+        padding: 0px;
+    }
+}
