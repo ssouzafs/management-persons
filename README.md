@@ -8,10 +8,13 @@
 </p>
 
 # Instruções de Instalação
-
 ## Após clonar o projeto para sua máquina local, execute os seguintes passos:
-Para que o projeto funcione é preciso ter instalado na máquina o docker e docker-compose.
-Em seguida  rodar o comando, na raiz do projeto :
+
+
+- Para que o projeto funcione é preciso ter instalado na máquina o docker e docker-compose.
+Antes de iniciar, renomeie arquivo ```.env.exemplo``` para ```.env```
+
+- Em seguida  rodar o comando, na raiz do projeto :
 ~~~php
  docker run --rm \
     -u "$(id -u):$(id -g)" \
@@ -20,9 +23,28 @@ Em seguida  rodar o comando, na raiz do projeto :
     laravelsail/php81-composer:latest \
     composer install --ignore-platform-reqs
 ~~~
-- Depois de instalado as dependências execute o comando **.vendor/bin/sail up**
-**Ex.: .vendor/bin/sail npm install, .vendor/bin/sail composer update** e por último rode as migrations com o comando **.vendor/bin/sail artisan migrate.**
-Para não precisar ficar digitando o caminho da pasta a todo momento basta colar no terminal o comando **alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'.**
-- Depois disso, śo usar o comando **sail** sucedido dos comandos do composer ou do npm, etc.
-Note que a última migration a ser executada é uma inserção de um usuário admin com o email: **admin.email@test.com** e senha: **123456** para acessar o sistema. Lembrando que o usuário admim é acessado com o prefixo admin. Ex:. **/admim** retornará a tela de login de usuário admim e a  / (barra) retornará a tela de login do usuário comum.
-* Observação: Não precisa ter instaldo previamente nada (PHP, PERL ou MSQL, XAMP) nada disso. O Laravel gerencia tudo isso via docker. Instala tudo como se fossem dependências.
+- Depois de instalado as dependências execute o comando:
+~~~php
+./vendor/bin/sail up
+~~~
+- Para facilitar, você pode rodar o comando ``` alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'```. 
+
+- Isso criará um álias para o caminho na pasta .vendor. Agora você pode usar somente o comando ```sail [nome-do-comando] ``` ao invés de ```./vendor/bin/sail [nome-do-comando]``` enquanto a aba atual do terminal estiver aberta. Nos passos adiante será utilizado o caminho completo, mas você pode utilizar somente a forma abreviada como foi explicado.
+
+- Continuando os passos, execute os comandos de instalação das dependências do composer e também as dos arquivos JS (sempre dentro da pasta raiz do projeto):
+~~~php
+./vendor/bin/sail composer update
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run dev
+~~~
+- Agora basta rodar as migrações para que sejam criadas as tabelas no banco de dados, execute o comando:
+~~~php
+./vendor/bin/sail migrate
+~~~
+- Note que a última **migration** a ser executada é uma inserção de um usuário administrador com as credenciais, email: ```admin.email@test.com``` e senha: ```123456```. use-as para acessar o sistema em modo administrador.
+
+- Vale lembrar que o usuário administrador é acessado com o prefixo **/admin**. EX.: ```http://0.0.0.0/admin```
+
+- Já para o acesso de usuário comum basta retirar o prefixo **/admin**, EX.: ```http://0.0.0.0/```
+
+- Pronto! Agora é so utilizar o sistema.
