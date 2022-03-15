@@ -35,7 +35,7 @@
             </label>
             <label>
                 <span class="field icon-envelope"> E-mail:</span>
-                <input type="text" value="admin@stockbarber.com.br" name="email" placeholder="Informe seu e-mail"/>
+                <input type="text"  name="email" placeholder="Informe seu e-mail"/>
             </label>
             <label>
                 <span class="field icon-unlock-alt">Senha:</span>
