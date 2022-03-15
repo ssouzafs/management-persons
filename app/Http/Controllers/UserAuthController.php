@@ -122,7 +122,8 @@ class UserAuthController extends Controller
         if ($user->save()) {
             $credentials = [
                 'email' => $request->email,
-                'password' => $request->password
+                'password' => $request->password,
+                'active' => true
             ];
             if (\Auth::guard('web')->attempt($credentials)) {
                 $responseJson['redirect'] = route('user.edit', ['id' => $user->id]);
